@@ -209,6 +209,17 @@ header nav.links a:hover {
 	align-self: center;
 	border-radius: 8px;
 }
+@media (max-width:500px) {
+    .masthead div.innovation a {
+        transition: none;
+        width: 100px;
+        height: 50px;
+        padding-top: 14px;
+    }
+    .masthead div.innovation a:hover {
+        transform: none;
+    }
+}
 
 .masthead div.innovation a:hover {
 	transform: scale(1.3);
