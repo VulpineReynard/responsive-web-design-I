@@ -181,6 +181,11 @@ header nav.links a:hover {
         padding-top: 0;
     }
 }
+@media (max-width: 500px) {
+    .masthead {
+        padding-bottom: 30px;
+    }
+}
 
 .masthead div.innovation {
 	width: 60%;
@@ -231,6 +236,12 @@ section.upperContent {
         padding-bottom: 25px;
     }
 }
+@media (max-width: 500px) {
+    section.upperContent {
+        display:flex;
+        flex-direction: column;
+    }
+}
 
 section.upperContent div.features {
 	width: 50%;
@@ -238,12 +249,25 @@ section.upperContent div.features {
 	flex-wrap: wrap;
 	padding: 5px;
 }
+@media (max-width: 500px) {
+    section.upperContent div.features {
+        width: 100%;
+        padding: 0;
+    }
+}
 
 section.upperContent div.about {
 	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 5px;
+}
+@media (max-width: 500px) {
+    section.upperContent div.about {
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+    }
 }
 /*--------------------------------------*/
 
