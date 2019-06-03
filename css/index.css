@@ -118,6 +118,8 @@ header nav.links a:hover {
 @media (max-width: 800px) {
     header {
         width: 90%;
+        height: auto;
+        padding-bottom: 10px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -198,6 +200,12 @@ section.upperContent {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+@media (max-width: 800px) {
+    section.upperContent{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
 
 section.upperContent div.features {
 	width: 50%;
@@ -224,6 +232,10 @@ section.bottomContent {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border-bottom: 2px solid black;
+}
+section.bottomContent {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 section.bottomContent div.services {
