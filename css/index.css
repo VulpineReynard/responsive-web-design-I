@@ -76,6 +76,14 @@ h1 {
         margin-bottom: 0;
     }
 }
+@media (max-width: 500px) {
+    h1 {
+        font-size: 45px;
+    }
+    p {
+        font-size: .75em;
+    }
+}
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
@@ -117,11 +125,13 @@ header nav.links a:hover {
 }
 @media (max-width: 800px) {
     header {
-        width: 90%;
+        width: 100%;
         height: auto;
         padding-bottom: 10px;
         display: flex;
         flex-direction: column-reverse;
+        position: static;
+        opacity: 1;
     }
     header nav.links {
         display: flex;
@@ -165,6 +175,12 @@ header nav.links a:hover {
 	padding-bottom: 60px;
 	border-bottom: 2px solid black;
 }
+@media (max-width: 800px) {
+    .masthead {
+        justify-content: center;
+        padding-top: 0;
+    }
+}
 
 .masthead div.innovation {
 	width: 60%;
@@ -173,7 +189,11 @@ header nav.links a:hover {
 	padding-top: 70px;
 	text-align: center;
 }
-
+@media (max-width: 800px) {
+    .masthead div.innovation {
+        padding-top: 35px;
+    }
+}
 .masthead div.innovation a {
 	text-decoration: none;
 	transition: transform 0.5s;
@@ -192,13 +212,9 @@ header nav.links a:hover {
 .masthead img {
 	align-self: flex-end;
 }
-
 @media (max-width: 800px) {
     .masthead img {
         display: none;
-    }
-    .masthead {
-        justify-content: center;
     }
 }
 /*-------------------------------*/
